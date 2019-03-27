@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { inject, observer } from "mobx-react";
 import { withRouter } from "react-router-dom";
 
-import { Container, Label, Button, Message, Form, Header, Grid, Input } from 'semantic-ui-react'
+import { Container, Image, Button, Message, Form, Header, Grid, Input } from 'semantic-ui-react'
 
 @withRouter
 @inject("indiStore")
@@ -103,15 +103,19 @@ class CloseService extends Component {
         }else{
             registerView = (
                 <Grid>
-                    <Grid.Column>
+                    <Grid.Column width={5}>
+                        <Image src='./images/sehasd.png' size='medium'/>
+                    </Grid.Column>
+                        
+                    <Grid.Column width={9}>
                         <Header as='h2' icon dividing>
                             Hello Closers!
                         </Header>
                         <div>
-                        { errorFlashView }
-                        { successFlashView }
-                    </div>
-                    
+                            { errorFlashView }
+                            { successFlashView }
+                        </div>
+
                         <Header.Subheader>
                             Please let us know your email address!
                         </Header.Subheader>

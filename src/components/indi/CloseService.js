@@ -15,6 +15,8 @@ class CloseService extends Component {
     }
 
     componentDidMount() {   
+        this.props.indiStore.setEmail(null);
+
         var get = function(u){
             var x = new XMLHttpRequest;
             x.open('GET', u, false);
@@ -86,7 +88,7 @@ class CloseService extends Component {
                 </div>
 
                     <Header.Subheader>
-                        Thank you.
+                        Thank you. registered email is {email} 
                     </Header.Subheader>
                     {/*
                     <Form>

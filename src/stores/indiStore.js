@@ -67,7 +67,7 @@ class IndiStore {
             }
 
             if (data) {
-                this.setEmail(null);
+                //this.setEmail(null);
                 this.setSuccessFlashMessage('Register succeed.');
 
                 // redirect

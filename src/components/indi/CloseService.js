@@ -104,12 +104,13 @@ class CloseService extends Component {
             )
         }else{
             registerView = (
+                <div>
                 <Grid>
                     <Grid.Column width={5}>
                         <Image src='./images/sehasd.png' size='medium'/>
                     </Grid.Column>
                         
-                    <Grid.Column width={9}>
+                    <Grid.Column width={10}>
                         <Header as='h2' icon dividing>
                             Hello Closers!
                         </Header>
@@ -119,13 +120,13 @@ class CloseService extends Component {
                         </div>
 
                         <Header.Subheader>
-                            Please let us know your email address!
+                            This message is from Naddic for all Closers.
                         </Header.Subheader>
                         <Header.Subheader>
-                            Closers will send you a special gift.
+                            Please leave your email address for 50 USD worth gift.
                         </Header.Subheader>
                         <Header.Subheader>
-                            Enter your email address and press the Submit button.
+                            The gift will be given once we open the new server on August.
                         </Header.Subheader>
 
                         <Form>
@@ -146,7 +147,16 @@ class CloseService extends Component {
                             </Form.Field>
                         </Form>
                     </Grid.Column>
+
+                    
                 </Grid>
+
+                <Grid>
+                    <Grid.Column width={15}>
+                        <Image src='./images/sec1_tit1.png' size='large'/>
+                    </Grid.Column>
+                </Grid>
+                </div>
             )
 
         }

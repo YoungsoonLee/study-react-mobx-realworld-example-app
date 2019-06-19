@@ -25,7 +25,7 @@ class CloseService extends Component {
         }
         //var clientIP = "";
         //this.store.clientIP = JSON.parse(get('http://ifconfig.me/all.json')).ip_addr;
-        this.props.indiStore.setIP(JSON.parse(get('http://ifconfig.me/all.json')).ip_addr);
+        this.props.indiStore.setIP(JSON.parse(get('https://ifconfig.me/all.json')).ip_addr);
     }
 
     handleInputEmail = (e, { value }) => {
